@@ -14,7 +14,7 @@
   "The method used for results display.")
 
 (defvar calc-textrail-redo-stack '()
-  "")
+  "A stack used to storage undone operations.")
 
 (defun calc-textrail-parsec-whitespace ()
   (parsec-many (parsec-ch ? )))

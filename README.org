@@ -1,0 +1,12 @@
+* Requirement
+- Texlive
+- ~parsec.el~
+- ~latex-math-preview.el~
+* Installation
+- ~quelpa-use-package~
+  #+BEGIN_SRC emacs-lisp
+    (use-package calc-textrail
+      :quelpa (calc-textrail :fetcher github :repo "HuangBoHong/calc-textrail")
+      :defer t
+      :hook (calc-mode . calc-textrail-mode))
+  #+END_SRC
